@@ -1,9 +1,8 @@
-import React from "react";
 import Image from "next/image";
-export default function Projects() {
+const Projects = () => {
   return (
     <>
-      <div className="flex flex-col justify-between items-center md:flex-row my-10 sm:flex-row sm:flex-wrap lg:px-[200px] lg:flex-row lg:justify-between xss:mx-3 md:flex-wrap">
+      <div className="flex flex-col justify-between items-center md:flex-row my-10 sm:flex-row sm:flex-wrap lg:px-[150px] lg:flex-row lg:justify-between xss:mx-3 md:flex-wrap">
         <div className="rounded-lg shadow-lg cursor-pointer hover:shadow-2xl xss:px-3 w-580:w-full sm:w-[300px] sm:h-[500px] sm:mx-auto border sm:mt-4">
           <Image
             className="w-580:w-full mt-4"
@@ -71,4 +70,6 @@ export default function Projects() {
       </div>
     </>
   );
-}
+};
+
+export default Projects;

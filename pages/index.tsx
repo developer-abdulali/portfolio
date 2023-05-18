@@ -3,7 +3,8 @@ import PPHeading from "@/components/ppHeading/ppHeading";
 import Projects from "@/components/projects/projects";
 import FollowMe from "@/components/followMe/followMe";
 import FollowLinks from "@/components/followLinks/followLinks";
-export default function Home() {
+
+const Home = () => {
   return (
     <>
       <HeroSection />
@@ -13,4 +14,5 @@ export default function Home() {
       <FollowLinks />
     </>
   );
-}
+};
+export default Home;
