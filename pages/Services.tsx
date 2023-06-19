@@ -4,7 +4,7 @@ import FollowLinks from "@/components/followLinks/followLinks";
 const Services = () => {
   return (
     <>
-      <div className="text-center p-28 px-10 xss:px-3">
+      <div className="text-center p-28 px-10 xss:px-5">
         <h1 className="text-7xl text-slate-700 xss:text-6xl xss:text-center">
           Services
         </h1>
