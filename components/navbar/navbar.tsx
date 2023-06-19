@@ -3,12 +3,16 @@ import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { ImTwitter } from "react-icons/im";
+import {Router, useRouter} from "next/router"
 import { BsLinkedin } from "react-icons/bs";
 import { GrFacebook } from "react-icons/gr";
 import { useState } from "react";
 const Navbar = () => {
+  const router = useRouter()
+  const isActiveLink =(link:any)=>{
+    return router.asPath === link ? "active-link":'';
+  }
   const [menuOpen, setMenuOpen] = useState(false);
-
   const handleNav = () => {
     setMenuOpen(!menuOpen);
   };
@@ -22,22 +26,22 @@ const Navbar = () => {
         </Link>
         <div className="hidden sm:flex">
           <ul className="hidden sm:flex">
-            <Link href="/">
+            <Link href="/" className={isActiveLink("/")}>
               <li className="ml-10 hover:text-cyan-500 duration-300 text-xl">
                 Home
               </li>
             </Link>
-            <Link href="/Services">
+            <Link href="/Services" className={isActiveLink("/Services")}>
               <li className="ml-10 hover:text-cyan-500 duration-300 text-xl">
                 Services
               </li>
             </Link>
-            <Link href="/About">
+            <Link href="/About" className={isActiveLink("/About")}>
               <li className="ml-10 hover:text-cyan-500 duration-300 text-xl">
                 About
               </li>
             </Link>
-            <Link href="/Contact">
+            <Link href="/Contact" className={isActiveLink("/Contact")}>
               <li className="ml-10 hover:text-cyan-500 duration-300 text-xl">
                 Contact
               </li>
@@ -102,7 +106,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <p className="mt-10">Let's Connect</p>
+        <p className="mt-10">Lets Connect</p>
         <div className="flex flex-row justify-between pt-10 items-center">
           <Link target="_blank" href="https://github.com/developer-abdulali">
             <BsGithub

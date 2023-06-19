@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.active-link {
+    color: #06b6d4;
+}

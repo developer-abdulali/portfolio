@@ -13,7 +13,7 @@ const About: NextPage = () => {
               About Me
             </h1>
             <p className="text-lg mb-4">
-              Hi, I'm Abdul Ali, a passionate web developer with experience in
+              Hi, I am Abdul Ali, a passionate web developer with experience in
               building modern and responsive websites. I specialize in front-end
               development using technologies like React, Next.js, Tailwind
               CSS, Bootstrap and Material UI.
