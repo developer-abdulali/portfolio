@@ -13,7 +13,7 @@ const HeroSection = () => {
           <span className="text-[20px] font-medium text-center flex text-[#6b7280be] xs:text-base xs:font-medium sm:text-[20px] mxl:text-[23px] xs:text-center sm:text-left mxl:text-4xl">
             A Frontend Developer & Design Enthusiast
           </span>
-          <Link target="_blank" href="https://drive.google.com/file/d/1yuVcuDnEcg3Jpf5kLSokHIxfcw8EGGDh/view?usp=drive_link">
+          <Link target="_blank" href="https://drive.google.com/file/d/13klU2Zmk18Z_NrkyZMbQet41RIQbLLIx/view?usp=drive_link">
             <button className="flex py-2 px-2 gap-2 mx-auto mt-5 shadow-md text-white font-medium bg-cyan-600 rounded-md duration-300 active:shadow-inner hover:bg-cyan-700 sm:mx-0 mxl:py-3 mxl:px-4">
               <BsArrowDownCircle className="mt-1" />
               Download Resume
