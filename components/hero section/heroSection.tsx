@@ -16,7 +16,7 @@ const HeroSection = () => {
           <Link target="_blank" href="https://drive.google.com/file/d/13klU2Zmk18Z_NrkyZMbQet41RIQbLLIx/view?usp=drive_link">
             <button className="flex py-2 px-2 gap-2 mx-auto mt-5 shadow-md text-white font-medium bg-cyan-600 rounded-md duration-300 active:shadow-inner hover:bg-cyan-700 sm:mx-0 mxl:py-3 mxl:px-4">
               <BsArrowDownCircle className="mt-1" />
-              Download Resume
+              Download Resumee
             </button>
           </Link>
         </div>

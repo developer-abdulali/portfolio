@@ -26,8 +26,8 @@ const Services = () => {
             Web App
           </h2>
           <p className="p-10 text-2xl text-center xss:text-base lg:text-base">
-            I will create web apps for your business and I will provide a best
-            service for your mobile app.
+            I will create web apps for your business and I will provide the best
+            services for your mobile app.
           </p>
         </div>
         <div className="border-2 w-[300px] h-[300px] shadow-lg xss:mt-5 lg:mt-0 w-580:w-full">
