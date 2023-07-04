@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import Navbar from "@/components/navbar/Navbar";
 import Head from "next/head";
+import Navbar from "@/components/navbar/Navbar";
 
 
 const App =({ Component, pageProps }: AppProps) => {
