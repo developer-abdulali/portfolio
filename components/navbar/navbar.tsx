@@ -3,7 +3,7 @@ import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { ImTwitter } from "react-icons/im";
-import {Router, useRouter} from "next/router"
+import {useRouter} from "next/router"
 import { BsLinkedin } from "react-icons/bs";
 import { GrFacebook } from "react-icons/gr";
 import { useState } from "react";

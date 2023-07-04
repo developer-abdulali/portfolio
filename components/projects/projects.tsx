@@ -5,6 +5,8 @@ import MpicStore from "../../public/images/MpicStore.png";
 import TodoAp from "../../public/images/Todo-ap.png";
 import WeatherAp from "../../public/images/Weather-ap.png";
 import PanaverseDao from "../../public/images/Panaverse-ap.png";
+import WishAp from "../../public/images/Wish-App.png";
+import MovieAp from "../../public/images/Movie-App.png"
 
 interface IProjects {
   id: number;
@@ -50,6 +52,19 @@ export const myProjects: Array<IProjects> = [
     image: PanaverseDao,
     url: "https://panaverse-dao.vercel.app/",
   },
+  {
+    id: 7,
+    title: "Movie App",
+    image: MovieAp,
+    url: "https://movie-app-nine-chi-80.vercel.app/",
+  },
+  {
+    id: 8,
+    title: "Wishes Bucket",
+    image: WishAp,
+    url: "https://wishes-bucket.vercel.app/"
+  },
+ 
 ];
 
 const Projects = () => {
