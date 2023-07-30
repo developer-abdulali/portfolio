@@ -6,7 +6,8 @@ import TodoAp from "../../public/images/Todo-ap.png";
 import WeatherAp from "../../public/images/Weather-ap.png";
 import PanaverseDao from "../../public/images/Panaverse-ap.png";
 import WishAp from "../../public/images/Wish-App.png";
-import MovieAp from "../../public/images/Movie-App.png"
+import MovieAp from "../../public/images/Movie-App.png";
+import NikeStore from "../../public/images/Nike-Store.png";
 
 interface IProjects {
   id: number;
@@ -64,6 +65,12 @@ export const myProjects: Array<IProjects> = [
     image: WishAp,
     url: "https://wishes-bucket.vercel.app/"
   },
+  {
+    id: 9,
+    title: "Nike Store App",
+    image: NikeStore,
+    url: "https://nike-store-app.vercel.app/"
+  },
  
 ];
 
@@ -78,6 +85,7 @@ const Projects = () => {
           <Image
             src={project.image}
             alt={project.title}
+            style={{ objectFit: "cover" }}
             className="rounded-md"
             width={350}
             height={300}
