@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { GoArrowUpRight } from "react-icons/go";
-import { Link, useNavigate } from "react-router-dom";
-import { projects } from "../../constant/data";
+import { useNavigate } from "react-router-dom";
+import { projectsData } from "../../constant/data";
 import Spinner from "../Spinner/Spinner";
+import ProjectCard from "../ProjectCard/ProjectCard";
 
 const ProjectsSection = () => {
   const [loading, setLoading] = useState(true);
@@ -36,22 +36,14 @@ const ProjectsSection = () => {
             <div className="flex flex-center wh_50">
               <Spinner />
             </div>
-          ) : projects.length === 0 ? (
+          ) : projectsData.length === 0 ? (
             <h1 className="w-100 flex flex-center mt-3">
               No projects found. Please check back later.
             </h1>
           ) : (
-            projects?.slice(0, 4)?.map((project) => (
-              <Link to="/" key={project?._id} className="procard">
-                <div className="proimgbox">
-                  <img src={project?.img} alt={project?.name} />
-                </div>
-                <div className="procontentbox">
-                  <h2>{project?.name}</h2>
-                  <GoArrowUpRight />
-                </div>
-              </Link>
-            ))
+            projectsData
+              ?.slice(0, 4)
+              ?.map((project) => <ProjectCard project={project} />)
           )}
         </div>
 

@@ -26,9 +26,6 @@ const Home = () => {
 
       {/* My Skills */}
       <MySkills />
-
-      {/* Recent Blogs */}
-      <RecentBlogs />
     </>
   );
 };

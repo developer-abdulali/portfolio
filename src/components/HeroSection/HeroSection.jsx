@@ -34,7 +34,11 @@ const HeroSection = () => {
               </Link>
               <ul className="hero_social">
                 <li>
-                  <Link to={"/"} target="_blank" rel="noopener noreferrer">
+                  <Link
+                    to={"https://twitter.com/ab_ali2k23"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaTwitter />
                   </Link>
                 </li>

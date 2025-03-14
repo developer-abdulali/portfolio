@@ -1573,7 +1573,7 @@ header.sticky {
   color: var(--dark-black);
 }
 
-.myskils_cards {
+.myskills_cards {
   width: 100%;
   display: flex;
   align-items: center;
@@ -2436,69 +2436,6 @@ header.sticky {
   font-weight: 500;
 }
 
-/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
-/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ GALLERY PAGE */
-/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
-.gallerypage {
-  position: relative;
-  padding-top: 10rem;
-}
-
-.dark .gallerypage {
-  background: var(--pure-white);
-}
-
-.gallarynavbar {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 5rem;
-}
-
-.gallarynavbar img {
-  width: 80px;
-}
-
-.gallarynavbar h1 {
-  font-family: math;
-  font-size: 30px;
-}
-
-.gallarynavbar svg {
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.gallary_items {
-  margin-top: 2rem;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 2rem;
-  font-family: math;
-  font-size: 20px;
-}
-
-.gallary_items li a.active {
-  position: relative;
-  color: #20b525;
-  font-weight: 600;
-  margin-left: 15px;
-}
-
-.gallary_items li a.active::before {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top: 40%;
-  transform: translateX(-50%);
-  width: 15px;
-  height: 3px;
-  background-color: #20b525;
-  border-radius: 50%;
-}
-
 .topphonesec {
   position: relative;
   margin: auto;
@@ -2620,10 +2557,7 @@ header.sticky {
   margin-top: 1rem;
 }
 
-.gallerybtmphotos {
-  padding: 5rem 1rem;
-  background-color: #0f0715;
-}
+/* 
 
 .dark .gallerybtmphotos {
   padding: 5rem 1rem;
@@ -2697,7 +2631,7 @@ header.sticky {
 
 .dark .galeryimgiteminfo p {
   color: #555;
-}
+} */
 
 /* @media screen and (max-width: 1400px) {
     .image-grid {
@@ -3007,7 +2941,7 @@ header.sticky {
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ SHOP PAGE */
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 
-.shoppage {
+/* .shoppage {
   position: relative;
   background-color: #140c1c;
   padding-top: 8rem;
@@ -3133,7 +3067,7 @@ header.sticky {
 
 .spprocard:hover h2 {
   color: var(--main-site-color);
-}
+} */
 
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ PROJECTS PAGE */

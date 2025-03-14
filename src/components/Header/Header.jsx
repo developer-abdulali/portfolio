@@ -65,7 +65,7 @@ export default function Header() {
               <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <Link to="/blogs">Blogs</Link>
+              <Link to="/skills">Skills</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>
@@ -109,11 +109,11 @@ export default function Header() {
             </li>
             <li>
               <Link
-                to="/blogs"
-                onClick={() => handleLinkClick("/blogs")}
-                className={activeLink === "/blogs" ? "active" : ""}
+                to="/skills"
+                onClick={() => handleLinkClick("/skills")}
+                className={activeLink === "/skills" ? "active" : ""}
               >
-                Blogs
+                Skills
               </Link>
             </li>
 
