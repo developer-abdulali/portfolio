@@ -83,13 +83,93 @@ const Contact = () => {
               </ul>
             </div>
           </div>
-          <div className="rightcontinputs">
-            <input
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="First Name"
-            />
+          <div className="rightcontp">
+            <form>
+              <div className="rightconttitle">
+                <h2>Your Contact Information</h2>
+              </div>
+              <div className="rightcontinputs">
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="First name"
+                />
+                <input
+                  type="text"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                  placeholder="Last name"
+                />
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEamil(e.target.value)}
+                  placeholder="Email address"
+                />
+                <input
+                  type="text"
+                  value={company}
+                  onChange={(e) => setCompany(e.target.value)}
+                  placeholder="Company name"
+                />
+                <input
+                  type="text"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  placeholder="Phone number"
+                />
+                {/* react-phone-input2 */}
+              </div>
+
+              <div className="rightcontcheckbox">
+                {[
+                  "Web Development",
+                  "Frontend Developement",
+                  "Website Migration",
+                  "E-commerce website",
+                  "Convert Figma Design",
+                  "Convert React js into Next js",
+                ].map((projectOption, i) => (
+                  <label key={i} className="cyberpunk-checkbox-label">
+                    <input
+                      type="checkbox"
+                      value={projectOption}
+                      className="cyberpunk-checkbox"
+                      checked={project.includes(projectOption)}
+                      onChange={() => handleProjectChange(projectOption)}
+                    />
+                    {projectOption}
+                  </label>
+                ))}
+              </div>
+              <div className="rightconttitle">
+                <h2>
+                  How much is the anticipated budget for your next project?
+                </h2>
+              </div>
+              <div className="rightcontradio">
+                {[
+                  "Less than $400",
+                  "$400-$500",
+                  "$800-$1000",
+                  "More than $1000",
+                ].map((priceRange, i) => (
+                  <div key={i} className="radio-button">
+                    <input
+                      type="radio"
+                      id={priceRange}
+                      name="example-radio"
+                      value={priceRange}
+                      checked={price === priceRange}
+                      onChange={(e) => setPrice(e.target.value)}
+                    />
+                    <span className="radio"></span>
+                    <label htmlFor={priceRange}>{priceRange}</label>
+                  </div>
+                ))}
+              </div>
+            </form>
           </div>
         </div>
       </div>

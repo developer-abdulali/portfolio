@@ -3282,7 +3282,7 @@ header.sticky {
 }
 
 .rightcontcheckbox,
-.rightcontredio,
+.rightcontradio,
 .rightcontpera {
   padding: 2rem;
   display: flex;
@@ -5089,7 +5089,7 @@ header.sticky {
     padding: 1rem;
   }
 
-  .rightcontredio {
+  .rightcontradio {
     padding: 1rem 0.3rem;
   }
 
