@@ -50,7 +50,7 @@ const Preloader = ({ isLoading }) => {
   }, [isLoading]);
 
   return (
-    <div className={`preloader ${isLoading ? "" : "hidden"}`}>
+    <section className={`preloader ${isLoading ? "" : "hidden"}`}>
       <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
         <path
           id="preloaderSvg"
@@ -70,7 +70,7 @@ const Preloader = ({ isLoading }) => {
           <span>I</span>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
