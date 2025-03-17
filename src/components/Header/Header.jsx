@@ -3,6 +3,7 @@ import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { IoMoonSharp } from "react-icons/io5";
 import { LuSun } from "react-icons/lu";
 import { Link, useLocation } from "react-router-dom";
+import ScrollProgressBar from "../ScrollProgressBar/ScrollProgressBar";
 
 // NavLink Component
 const NavLink = ({ to, children, activeLink, onClick }) => {
@@ -19,12 +20,13 @@ const NavLink = ({ to, children, activeLink, onClick }) => {
   );
 };
 
-export default function Header() {
+const Header = () => {
   const { pathname } = useLocation();
   const [darkMode, setDarkMode] = useState(false);
   const [clicked, setClicked] = useState(false);
   const [activeLink, setActiveLink] = useState("/");
   const [mobile, setMobile] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
@@ -58,8 +60,25 @@ export default function Header() {
     setDarkMode(!darkMode);
   };
 
+  // Handle sticky header
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header>
+    <header className={isSticky ? "sticky" : ""}>
+      <ScrollProgressBar />
       <nav className="container flex flex-sb">
         {/* Large screen content */}
         <div className="logo flex gap-2">
@@ -164,4 +183,6 @@ export default function Header() {
       </nav>
     </header>
   );
-}
+};
+
+export default Header;

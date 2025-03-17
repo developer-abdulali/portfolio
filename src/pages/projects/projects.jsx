@@ -7,6 +7,9 @@ const Projects = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    document.title = "Abdul Ali - My Recent Works";
+    window.scrollTo(0, 0);
+
     // Simulate a data fetching delay
     const fetchData = () => {
       setTimeout(() => {
@@ -24,8 +27,10 @@ const Projects = () => {
           <div className="project_titles">
             <h2>My Recent Works</h2>
             <p>
-              We put your ideas and thus your wishes in the form of a unique web
-              project that inspires you and your customers.
+              Explore a collection of my latest projects, where creativity meets
+              functionality. Each piece is crafted with precision to deliver
+              exceptional user experiences and bring your digital visions to
+              life.
             </p>
           </div>
           {/* Project Card */}

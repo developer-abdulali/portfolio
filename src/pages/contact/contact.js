@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaFacebook, FaGithub } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { GrLinkedin } from "react-icons/gr";
@@ -23,6 +23,10 @@ const Contact = () => {
     }
   };
 
+  useEffect(() => {
+    document.title = "Abdul Ali - Contact With Me";
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="contactpage">
       <div className="container">

@@ -1,4 +1,4 @@
-import { BarLoader, DotLoader, PacmanLoader } from "react-spinners";
+import { BarLoader } from "react-spinners";
 
 const Spinner = () => {
   return (

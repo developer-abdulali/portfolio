@@ -1,17 +1,18 @@
+import { useEffect } from "react";
 import ExperienceStudy from "../../components/ExperienceStudy/ExperienceStudy";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import MySkills from "../../components/MySkills/MySkills";
 import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
-import RecentBlogs from "../../components/RecentBlogs/RecentBlogs";
-import ScrollProgressBar from "../../components/ScrollProgressBar/ScrollProgressBar";
 import ServicesSection from "../../components/ServicesSection/ServicesSection";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Abdul Ali - Frontend Developer & React Specialist";
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
-      {/* Progress Bar */}
-      <ScrollProgressBar />
-
       {/* Hero Section */}
       <HeroSection />
 

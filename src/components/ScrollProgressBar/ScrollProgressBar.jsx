@@ -17,12 +17,12 @@ const ScrollProgressBar = () => {
   }, []);
 
   return (
-    <div className="scroll-progress-bar">
+    <section className="scroll-progress-bar">
       <div
         className="scroll-progress"
         style={{ width: `${scrollProgress}%` }}
       ></div>
-    </div>
+    </section>
   );
 };
 

@@ -1,6 +1,30 @@
+import React, { useEffect } from "react";
+import { servicesData } from "../../constant/data";
+
+const Service = ({ number, title, Icon, points, description }) => (
+  <div className="csservice">
+    <span>{number}</span>
+    <div>
+      <h2>{title}</h2>
+      <Icon size={50} />
+    </div>
+    <ul>
+      {points.map((point, index) => (
+        <li key={index}>{point}</li>
+      ))}
+    </ul>
+    <p>{description}</p>
+  </div>
+);
+
 const Services = () => {
+  useEffect(() => {
+    document.title = "Abdul Ali - My Services";
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="servicespage">
+    <section className="servicespage">
       <div className="topservices">
         <div className="container">
           <h2>My Services</h2>
@@ -12,49 +36,14 @@ const Services = () => {
       <div className="centerservices">
         <div className="container">
           <div className="cservicesbox">
-            <div className="csservice">
-              <span>01</span>
-              <div>
-                <h2>Web Development</h2>
-                <img src="/img/website_icon.svg" alt="" />
-              </div>
-              <ul>
-                <li>Performance & Load Time</li>
-                <li>Reusable Components</li>
-                <li>Responsiveness</li>
-                <li>Quality assurance and testing</li>
-                <li>Quality maintainance, updates and bug fixes</li>
-              </ul>
-              <p>
-                I am very good in web development offering services, I offer
-                reliable we development services to generate the remarkable
-                results which need your business.
-              </p>
-            </div>
-
-            <div className="csservice">
-              <span>01</span>
-              <div>
-                <h2>Web Development</h2>
-                <img src="/img/website_icon.svg" alt="" />
-              </div>
-              <ul>
-                <li>Performance & Load Time</li>
-                <li>Reusable Components</li>
-                <li>Responsiveness</li>
-                <li>Quality assurance and testing</li>
-                <li>Quality maintainance, updates and bug fixes</li>
-              </ul>
-              <p>
-                I am very good in web development offering services, I offer
-                reliable we development services to generate the remarkable
-                results which need your business.
-              </p>
-            </div>
+            {servicesData?.map((service, index) => (
+              <Service key={index} {...service} />
+            ))}
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
+
 export default Services;

@@ -74,7 +74,7 @@ const HeroSection = () => {
           </div>
 
           {/* right side img section */}
-          <div className="heroimgright">
+          <div className="heroimageright">
             <div className="hero_img_box">
               <img src="/img/mypic.jpg" alt="coder" />
             </div>

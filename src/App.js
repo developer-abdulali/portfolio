@@ -27,7 +27,7 @@ const App = () => {
   }, []);
 
   return (
-    <div id="site-wrapper">
+    <section id="site-wrapper">
       <Preloader isLoading={isLoading} />
       <Header />
       {!isLoading && (
@@ -41,7 +41,7 @@ const App = () => {
         </Routes>
       )}
       <Footer />
-    </div>
+    </section>
   );
 };
 export default App;

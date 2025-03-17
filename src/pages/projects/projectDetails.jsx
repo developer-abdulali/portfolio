@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { projectsData } from "../../constant/data";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,6 +10,15 @@ import "swiper/css/pagination";
 const ProjectDetails = () => {
   const { id } = useParams();
   const project = projectsData.find((project) => project._id === id);
+
+  useEffect(() => {
+    if (project) {
+      document.title = `${project.name} - Project Details`;
+    } else {
+      document.title = "Project Not Found";
+    }
+    window.scrollTo(0, 0);
+  }, [project]);
 
   if (!project) {
     return <div>Project not found</div>;
