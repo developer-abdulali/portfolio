@@ -169,6 +169,23 @@ const Contact = () => {
                   </div>
                 ))}
               </div>
+              <div className="rightconttitle">
+                <h2>Tell me about your project</h2>
+              </div>
+              <div className="rightcontpera">
+                <textarea
+                  rows={4}
+                  name="description"
+                  value={description}
+                  onChange={(e) => setDiscription(e.target.value)}
+                  placeholder="Project description..."
+                ></textarea>
+              </div>
+              <hr />
+              <div className="rightcontsbtn flex gap-3">
+                <button type="submit">Submit</button>
+                {/* <p>message sent successfullly</p> */}
+              </div>
             </form>
           </div>
         </div>

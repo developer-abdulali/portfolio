@@ -3419,11 +3419,11 @@ header.sticky {
   border: 1px dashed #555;
 }
 
-.righhcontsbtn {
+.rightcontsbtn {
   padding: 2rem;
 }
 
-.righhcontsbtn button {
+.rightcontsbtn button {
   border-radius: 0.25rem;
   text-transform: uppercase;
   font-style: normal;
@@ -3468,7 +3468,7 @@ header.sticky {
   background-position: 100%;
 }
 
-.righhcontsbtn button:hover {
+.rightcontsbtn button:hover {
   cursor: pointer;
   transition: background-image all 0.3s ease-in;
   padding-right: 5rem;

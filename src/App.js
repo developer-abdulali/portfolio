@@ -8,19 +8,38 @@ import Services from "./pages/services/services";
 import MySkills from "./components/MySkills/MySkills";
 import Footer from "./components/Footer/Footer";
 import ProjectDetails from "./pages/projects/projectDetails";
+import { useEffect, useState } from "react";
+import Preloader from "./components/PreLoader/PreLoader";
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const handleComplete = () => {
+      setIsLoading(false);
+    };
+
+    // simulate a loading delay
+    setTimeout(handleComplete, 3000);
+
+    return () => {
+      clearTimeout(handleComplete);
+    };
+  }, []);
+
   return (
     <div id="site-wrapper">
+      <Preloader isLoading={isLoading} />
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/project/:id" element={<ProjectDetails />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/skills" element={<MySkills />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      {!isLoading && (
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:id" element={<ProjectDetails />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/skills" element={<MySkills />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      )}
       <Footer />
     </div>
   );
