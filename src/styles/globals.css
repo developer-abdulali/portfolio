@@ -365,13 +365,13 @@ header.sticky {
   background-color: var(--pure-white);
 } */
 
-.logo img {
+/* .logo img {
   width: 65px;
-}
+} */
 
 .logo h2 {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .navlist li a {

@@ -82,7 +82,9 @@ const Header = () => {
       <nav className="container flex flex-sb">
         {/* Large screen content */}
         <div className="logo flex gap-2">
-          <Link to="/">Abdul Ali</Link>
+          <Link to="/">
+            <h2>{`<Abdul Ali />`}</h2>
+          </Link>
         </div>
 
         <div className="navlist flex gap-2">

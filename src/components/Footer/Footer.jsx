@@ -9,7 +9,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="footersec flex flex-center flex-col gap-2">
         <div className="logo flex gap-2">
-          <Link to="/">Abdul Ali</Link>
+          <Link to="/">
+            <h2>{`<Abdul Ali />`}</h2>
+          </Link>
         </div>
         <div className="ul flex gap-2">
           <li>

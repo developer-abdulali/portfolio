@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { FaFacebook, FaGithub } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { GrLinkedin } from "react-icons/gr";
@@ -26,21 +28,23 @@ const Contact = () => {
   useEffect(() => {
     document.title = "Abdul Ali - Contact With Me";
     window.scrollTo(0, 0);
+    AOS.init({ duration: 1200, once: true });
   }, []);
+
   return (
     <section className="contactpage">
       <div className="container">
         <div className="contactformp">
-          <div className="leftcontp">
+          <div className="leftcontp" data-aos="fade-right">
             <h2>Get in touch</h2>
-            <h2>Let's talking about your project</h2>
+            <h2>Let's talk about your project</h2>
             <p>
               Thinking about a new project, a problem to solve, or just want to
               connect? Let's do it!
             </p>
             <p>Use the form on this page or get in touch by other means.</p>
             <p>
-              We love question and feedback - and we're always happy to help!
+              We love questions and feedback - and we're always happy to help!
             </p>
             <div className="leftsociinfo">
               <ul>
@@ -87,9 +91,10 @@ const Contact = () => {
               </ul>
             </div>
           </div>
-          <div className="rightcontp">
+
+          <div className="rightcontp" data-aos="fade-left">
             <form>
-              <div className="rightconttitle">
+              <div className="rightconttitle" data-aos="zoom-in">
                 <h2>Your Contact Information</h2>
               </div>
               <div className="rightcontinputs">
@@ -98,42 +103,46 @@ const Contact = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="First name"
+                  data-aos="fade-up"
                 />
                 <input
                   type="text"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
                   placeholder="Last name"
+                  data-aos="fade-up"
                 />
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEamil(e.target.value)}
                   placeholder="Email address"
+                  data-aos="fade-up"
                 />
                 <input
                   type="text"
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
                   placeholder="Company name"
+                  data-aos="fade-up"
                 />
                 <input
                   type="text"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="Phone number"
+                  data-aos="fade-up"
                 />
-                {/* react-phone-input2 */}
               </div>
 
-              <div className="rightcontcheckbox">
+              <div className="rightcontcheckbox" data-aos="flip-up">
                 {[
                   "Web Development",
-                  "Frontend Developement",
+                  "Frontend Development",
                   "Website Migration",
                   "E-commerce website",
                   "Convert Figma Design",
-                  "Convert React js into Next js",
+                  "Convert React.js into Next.js",
                 ].map((projectOption, i) => (
                   <label key={i} className="cyberpunk-checkbox-label">
                     <input
@@ -147,12 +156,13 @@ const Contact = () => {
                   </label>
                 ))}
               </div>
-              <div className="rightconttitle">
+
+              <div className="rightconttitle" data-aos="zoom-in">
                 <h2>
                   How much is the anticipated budget for your next project?
                 </h2>
               </div>
-              <div className="rightcontradio">
+              <div className="rightcontradio" data-aos="zoom-out">
                 {[
                   "Less than $400",
                   "$400-$500",
@@ -173,10 +183,11 @@ const Contact = () => {
                   </div>
                 ))}
               </div>
-              <div className="rightconttitle">
+
+              <div className="rightconttitle" data-aos="fade-up">
                 <h2>Tell me about your project</h2>
               </div>
-              <div className="rightcontpera">
+              <div className="rightcontpera" data-aos="fade-up">
                 <textarea
                   rows={4}
                   name="description"
@@ -186,9 +197,9 @@ const Contact = () => {
                 ></textarea>
               </div>
               <hr />
-              <div className="rightcontsbtn flex gap-3">
+
+              <div className="rightcontsbtn flex gap-3" data-aos="zoom-in">
                 <button type="submit">Submit</button>
-                {/* <p>message sent successfullly</p> */}
               </div>
             </form>
           </div>
@@ -197,4 +208,5 @@ const Contact = () => {
     </section>
   );
 };
+
 export default Contact;

@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
       key={project?._id}
       className="procard"
     >
-      <div className="proimgbox">
+      <div className="proimgbox" data-aos="zoom-in" data-aos-duration="800">
         <img src={project?.img} alt={project?.name} />
       </div>
       <div className="procontentbox">

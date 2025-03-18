@@ -28,18 +28,18 @@ const App = () => {
 
   return (
     <section id="site-wrapper">
-      <Preloader isLoading={isLoading} />
+      {/* <Preloader isLoading={isLoading} /> */}
       <Header />
-      {!isLoading && (
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/project/:id" element={<ProjectDetails />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/skills" element={<MySkills />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      )}
+      {/* {!isLoading && ( */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/project/:id" element={<ProjectDetails />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/skills" element={<MySkills />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      {/* )} */}
       <Footer />
     </section>
   );

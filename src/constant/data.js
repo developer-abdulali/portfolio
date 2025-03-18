@@ -146,26 +146,26 @@ export const projectsData = [
 
 // skills data
 export const skillsData = [
-  { name: "AOS", image: "/img/skills/aos.png" },
-  { name: "Bootstrap", image: "/img/skills/bootstrap.png" },
-  { name: "Cloudinary", image: "/img/skills/cloudinary.png" },
+  { name: "HTML", image: "/img/skills/html.webp" },
   { name: "CSS", image: "/img/skills/css.png" },
+  { name: "Bootstrap", image: "/img/skills/bootstrap.png" },
+  { name: "JavaScript", image: "/img/skills/js.png" },
+  { name: "TypeScript", image: "/img/skills/ts.png" },
+  { name: "Tailwind CSS", image: "/img/skills/tailwindcss.png" },
+  { name: "React", image: "/img/skills/react.png" },
+  { name: "Next.js", image: "/img/skills/next.png" },
+  { name: "ShadCN UI", image: "/img/skills/shadcd.png" },
+  { name: "AOS", image: "/img/skills/aos.png" },
+  { name: "Cloudinary", image: "/img/skills/cloudinary.png" },
   { name: "ExpressJS", image: "/img/skills/expressjs.png" },
   { name: "Firebase", image: "/img/skills/firebse.png" },
   { name: "Framer Motion", image: "/img/skills/framermotion.svg" },
-  { name: "HTML", image: "/img/skills/html.webp" },
-  { name: "JavaScript", image: "/img/skills/js.png" },
   { name: "JWT", image: "/img/skills/jwt.png" },
   { name: "MongoDB", image: "/img/skills/mongodb.svg" },
   { name: "Material UI", image: "/img/skills/mui.png" },
-  { name: "Next.js", image: "/img/skills/next.png" },
   { name: "Node.js", image: "/img/skills/node.png" },
-  { name: "React", image: "/img/skills/react.png" },
   { name: "React Bootstrap", image: "/img/skills/reactbootstrap.png" },
   { name: "React Icons", image: "/img/skills/reacticons.png" },
-  { name: "SCSS", image: "/img/skills/shadcd.png" },
-  { name: "Tailwind CSS", image: "/img/skills/tailwindcss.png" },
-  { name: "TypeScript", image: "/img/skills/ts.png" },
 ];
 
 // src/constant/data.js (services data)
