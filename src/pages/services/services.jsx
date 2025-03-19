@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { servicesData } from "../../constant/data";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import BreadCumbs from "../../components/BreadCumbs/BreadCumbs";
 
 const Service = ({ number, title, Icon, points, description, index }) => (
   <div
@@ -33,14 +34,7 @@ const Services = () => {
   return (
     <section className="servicespage">
       {/* Top Section */}
-      <div className="topservices" data-aos="fade-down">
-        <div className="container">
-          <h2>My Services</h2>
-          <p>
-            Home <span>&gt;</span> Services
-          </p>
-        </div>
-      </div>
+      <BreadCumbs h2Content="My Services" page="Home" component="Services" />
 
       {/* Services List */}
       <div className="centerservices">

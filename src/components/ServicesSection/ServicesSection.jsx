@@ -1,7 +1,9 @@
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { servicesData } from "../../constant/data";
 import { GoArrowUpRight } from "react-icons/go";
 import { useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ServicesSection = () => {
   const navigate = useNavigate();
@@ -13,10 +15,21 @@ const ServicesSection = () => {
 
   const handleMouseOut = () => setActiveIndex(0);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <section className="services">
       <div className="container">
-        <div className="services_titles">
+        <div
+          className="services_titles"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           <h2>My Quality Services</h2>
           <p>
             Experience the transformation of your ideas into stunning web
@@ -25,7 +38,7 @@ const ServicesSection = () => {
             audience.
           </p>
         </div>
-        <div className="services_menu">
+        <div className="services_menu" data-aos="fade-up">
           {servicesData.slice(0, 4).map((service, i) => (
             <div
               key={i}
@@ -50,6 +63,8 @@ const ServicesSection = () => {
         onClick={() => navigate("/services")}
         className="project_buttons"
         style={{ marginTop: "8rem" }}
+        data-aos="zoom-in"
+        data-aos-delay="1000"
       >
         <button>View All Services</button>
       </div>

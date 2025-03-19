@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footersec flex flex-center flex-col gap-2">
-        <div className="logo flex gap-2">
+        <div className="logo">
           <Link to="/">
             <h2>{`<Abdul Ali />`}</h2>
           </Link>

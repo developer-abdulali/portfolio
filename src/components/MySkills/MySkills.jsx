@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { skillsData } from "../../constant/data";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import BreadCumbs from "../BreadCumbs/BreadCumbs";
 
 const MySkills = () => {
   const navigate = useNavigate();
@@ -26,19 +27,24 @@ const MySkills = () => {
   return (
     <section className="myskills">
       <div className="container">
-        <div
-          className="myskills_title"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <h2>My Skills</h2>
-          <p>
-            Transforming your vision into reality, I specialize in crafting
-            innovative web solutions that captivate audiences and drive success.
-            With a blend of creativity and technical expertise, I deliver
-            projects that stand out and make a lasting impact.
-          </p>
-        </div>
+        {isHomePage ? (
+          <div
+            className="myskills_title"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h2>My Skills</h2>
+            <p>
+              Transforming your vision into reality, I specialize in crafting
+              innovative web solutions that captivate audiences and drive
+              success. With a blend of creativity and technical expertise, I
+              deliver projects that stand out and make a lasting impact.
+            </p>
+          </div>
+        ) : (
+          <BreadCumbs h2Content="My Skills" page="Home" component="Skills" />
+        )}
+
         <div className="myskills_cards">
           {displayedSkills.map((skill, index) => (
             <div

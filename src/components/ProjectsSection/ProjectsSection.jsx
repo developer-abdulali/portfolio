@@ -35,8 +35,9 @@ const ProjectsSection = () => {
         >
           <h2>My Recent Works</h2>
           <p>
-            We put your ideas and thus your wishes in the form of a unique web
-            project that inspires you and your customers.
+            Explore a collection of my latest projects, where creativity meets
+            functionality. Each piece is crafted with precision to deliver
+            exceptional user experiences and bring your digital visions to life.
           </p>
         </div>
 

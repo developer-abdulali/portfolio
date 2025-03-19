@@ -2,6 +2,7 @@ import Spinner from "../../components/Spinner/Spinner";
 import { projectsData } from "../../constant/data";
 import { useEffect, useState } from "react";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import BreadCumbs from "../../components/BreadCumbs/BreadCumbs";
 
 const Projects = () => {
   const [loading, setLoading] = useState(true);
@@ -24,15 +25,12 @@ const Projects = () => {
     <section className="projectpage">
       <div className="projects">
         <div className="container">
-          <div className="project_titles">
-            <h2>My Recent Works</h2>
-            <p>
-              Explore a collection of my latest projects, where creativity meets
-              functionality. Each piece is crafted with precision to deliver
-              exceptional user experiences and bring your digital visions to
-              life.
-            </p>
-          </div>
+          <BreadCumbs
+            h2Content="My Recent Works"
+            page="Home"
+            component="Projects"
+          />
+
           {/* Project Card */}
           <div className="projects_cards">
             {loading ? (

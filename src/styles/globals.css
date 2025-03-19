@@ -612,7 +612,7 @@ header.sticky {
 }
 
 .hero_title {
-  font-size: 72px;
+  font-size: 60px;
   background: linear-gradient(to right, var(--main-site-color) 0%, #fff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
