@@ -11,13 +11,11 @@ const ProjectsSection = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Initialize AOS animations
     AOS.init({
       duration: 1200,
       easing: "ease-in-out",
     });
 
-    // Simulate a data fetching delay
     const fetchData = () => {
       setTimeout(() => {
         setLoading(false);

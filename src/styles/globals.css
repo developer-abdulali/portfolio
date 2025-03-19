@@ -244,8 +244,8 @@ img {
   --week-white: #f6f3fc;
   --dark-site-secondary: #19195c;
   --main-hover-color: #905ff1;
-  --glass-bg-light: rgba(255, 255, 255, 0.1); /* Light mode glass background */
-  --glass-bg-dark: rgba(0, 0, 0, 0.5); /* Dark mode glass background */
+  /* --glass-bg-light: rgba(255, 255, 255, 0.1); Light mode glass background */
+  /* --glass-bg-dark: rgba(0, 0, 0, 0.5); Dark mode glass background */
 }
 
 .container {
@@ -334,36 +334,22 @@ header {
   transition: 0.3s ease-in-out;
 }
 
-/* header.sticky {
+header.sticky {
   position: fixed;
   height: auto;
   z-index: 999999999;
   background-color: var(--dark-black);
   padding: 1.2rem 1rem;
   box-shadow: 0 0 15px #2a1454;
-} */
-
-header.sticky {
-  position: fixed;
-  height: auto;
-  z-index: 999999999;
-  background: var(--glass-bg-light); /* Default to light mode */
-  backdrop-filter: blur(10px); /* Apply blur effect */
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
-  padding: 1.2rem 1rem;
-}
-
-.dark header.sticky {
-  background: var(--glass-bg-dark); /* Dark mode glass background */
 }
 
 .dark header {
   color: var(--dark-black);
 }
 
-/* .dark header.sticky {
+.dark header.sticky {
   background-color: var(--pure-white);
-} */
+}
 
 /* .logo img {
   width: 65px;
@@ -1305,7 +1291,8 @@ header.sticky {
   position: relative;
   width: 48%;
   height: 450px;
-  padding: 3rem;
+  padding: 1rem;
+  /* padding: 3rem; */
   padding-bottom: 0;
   background-color: #140c1c;
   margin-top: 3rem;
@@ -1325,7 +1312,7 @@ header.sticky {
 .proimgbox img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .procontentbox {
@@ -2640,152 +2627,6 @@ header.sticky {
   color: #c5c5c5;
 }
 
-.pricingplansec {
-  background-color: #0f0715;
-  padding-bottom: 5rem;
-}
-
-.dark .pricingplansec {
-  background-color: var(--pure-white);
-}
-
-.pricingtitles {
-  position: relative;
-  padding: 5rem 1rem;
-}
-
-.pricingtitles h3 {
-  font-size: 22px;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-.dark .pricingtitles h3 {
-  color: #555;
-}
-
-.pricingtitles h2 {
-  font-size: 40px;
-  background: linear-gradient(to right, #8750f7 0%, #dddddd 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.dark .pricingtitles h2 {
-  font-size: 40px;
-  background: linear-gradient(
-    to right,
-    var(--main-site-color) 0%,
-    var(--dark-site-secondary) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.pricingcards {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.pricingcard {
-  background-color: #2e64cf49;
-  padding: 1.8rem;
-  border-radius: 10px;
-  width: 25%;
-  transition: 0.3s ease-in-out;
-}
-
-.dark .pricingcard {
-  background-color: var(--week-white);
-}
-
-.pricingcard h2 {
-  font-size: 42px;
-  margin: 1rem 0;
-  text-align: center;
-}
-
-.dark .pricingcard h2 {
-  color: var(--dark-black);
-}
-
-.pricingcard h2 span {
-  font-size: 18px;
-  font-weight: 500;
-  color: #ad8cef;
-}
-
-.pricingcard h4 {
-  font-size: 22px;
-  margin: 1rem 0;
-}
-
-.dark .pricingcard h4 {
-  color: var(--dark-black);
-}
-
-.dark .pricingcard p {
-  color: #555;
-}
-
-.pricingcard a {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.pricingcard a button {
-  width: 100%;
-  padding: 1rem;
-  font-size: 20px;
-  font-weight: 600;
-  border-radius: 10px;
-  background-color: #151a25;
-  color: #fff;
-  border: none;
-  outline: none;
-  transition: 0.3s ease-in-out;
-}
-
-.pricingcard h5 {
-  font-size: 18px;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.dark .pricingcard h5 {
-  color: var(--dark-black);
-}
-
-.pricingcard ul li {
-  margin: 1rem 0;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.dark .pricingcard ul li {
-  color: #555;
-}
-
-.pricingcard ul li svg {
-  color: #b795fb;
-  font-size: 20px;
-}
-
-.pricingcard:nth-child(2) a button {
-  background-color: #4f3ed0;
-}
-
-.pricingcard a:hover button {
-  background-color: #4f3ed0;
-}
-
-.pricingcard:nth-child(2) a:hover button {
-  background-color: #fff;
-  color: #4f3ed0;
-}
-
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ PROJECTS PAGE */
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
@@ -4084,6 +3925,7 @@ header.sticky {
 .proslugimg img {
   width: 100%;
   height: 100%;
+  /* object-fit: contain; */
 }
 
 .projectsluginfo {
@@ -4316,26 +4158,26 @@ header.sticky {
     columns: 2;
   }
 
-  .pricingcard {
+  /* .pricingcard {
     width: 100%;
-  }
+  } */
 
-  .pricingcard:nth-child(1),
+  /* .pricingcard:nth-child(1),
   .pricingcard:nth-child(2),
   .pricingcard:nth-child(3) {
     width: 100%;
-  }
+  } */
 
-  .pricingcard {
+  /* .pricingcard {
     width: 100%;
-  }
+  } */
 
-  .pricingcards {
+  /* .pricingcards {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
-  }
+  } */
 
   .spprocard {
     width: 47%;

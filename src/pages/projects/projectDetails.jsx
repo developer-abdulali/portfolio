@@ -1,17 +1,19 @@
 import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { projectsData } from "../../constant/data";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ProjectDetails = () => {
   const { id } = useParams();
-  const project = projectsData.find((project) => project._id === id);
+  const project = projectsData?.find((project) => project._id === id);
 
   useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+
     if (project) {
       document.title = `${project.name} - Project Details`;
     } else {
@@ -26,37 +28,20 @@ const ProjectDetails = () => {
 
   return (
     <section className="projectslug">
-      <div className="projectslugimg">
+      <div className="projectslugimg" data-aos="fade-up">
         <div className="container">
-          <div className="proslugimg">
+          <div className="proslugimg" data-aos="zoom-in">
             <img src={project.img} alt={project.name} />
           </div>
 
-          <div className="projectsluginfo">
+          <div className="projectsluginfo" data-aos="fade-left">
             <div className="leftmainproinfo">
-              <h1>{project.name}</h1>
-              <p>{project.description}</p>
-              <Link to={project.website} target="_blank">
+              <h1 data-aos="fade-right">{project.name}</h1>
+              <p data-aos="fade-up">{project.description}</p>
+              <Link to={project.website} target="_blank" data-aos="fade-up">
                 Live Preview
               </Link>
             </div>
-          </div>
-
-          <div className="projectslugsliderimg">
-            <Swiper
-              slidesPerView={"auto"}
-              spaceBetween={30}
-              freeMode={true}
-              grabCursor={true}
-              modules={[FreeMode, Pagination]}
-              className="mySwiper"
-            >
-              {project.images.map((image, index) => (
-                <SwiperSlide key={index}>
-                  <img src={image} alt={`${project.name} - ${index + 1}`} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
           </div>
         </div>
       </div>

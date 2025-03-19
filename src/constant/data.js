@@ -14,133 +14,74 @@ import { MdOutlineMobileFriendly } from "react-icons/md";
 export const projectsData = [
   {
     _id: "a1b2c3d4e5f6g7h8i9j0",
-    name: "EcoFriendly Homes",
-    img: "https://picsum.photos/id/1/150",
-    website: "https://ecohomes.example.com",
+    name: "Movix App",
+    img: "/img/projects/movix.png",
+    website: "https://moviemovixapp.netlify.app/",
     description:
-      "Building sustainable homes with eco-friendly materials and energy-efficient designs.",
-    images: [
-      "https://picsum.photos/id/1/300",
-      "https://picsum.photos/id/11/300",
-      "https://picsum.photos/id/21/300",
-    ],
+      "The Movix app is a sleek and modern movie discovery platform that provides users with access to millions of movies, TV shows, and information about their favorite celebrities. With an intuitive search bar and visually captivating design, the app allows users to explore and find content effortlessly. Deployed on Netlify, Movix showcases an engaging user interface with responsive design and a seamless browsing experience.",
   },
   {
     _id: "b2c3d4e5f6g7h8i9j0k1",
-    name: "Smart Irrigation System",
-    img: "https://picsum.photos/id/2/150",
-    website: "https://smartirrigation.example.com",
+    name: "Nike Shoes Store",
+    img: "/img/projects/nikeShoesStore.png",
+    website: "https://nike-store-app.vercel.app/",
     description:
-      "Innovative irrigation solutions that use smart technology to conserve water and improve crop yield.",
-    images: [
-      "https://picsum.photos/id/2/300",
-      "https://picsum.photos/id/12/300",
-      "https://picsum.photos/id/22/300",
-    ],
+      "Nike Shoes App is a stylish e-commerce platform for browsing and shopping the latest Nike shoes. With a sleek design and user-friendly interface, the app offers an effortless shopping experience. Deployed on Vercel for fast and reliable performance.",
   },
   {
     _id: "c3d4e5f6g7h8i9j0k1l2",
-    name: "Solar Powered Communities",
-    img: "https://picsum.photos/id/3/150",
-    website: "https://solarpower.example.com",
+    name: "Code Snap",
+    img: "/img/projects/codeSnap.png",
+    website: "https://snap-code-six.vercel.app/",
     description:
-      "Empowering communities with renewable solar energy to reduce carbon footprint and energy costs.",
-    images: [
-      "https://picsum.photos/id/3/300",
-      "https://picsum.photos/id/13/300",
-      "https://picsum.photos/id/23/300",
-    ],
+      "Snap Code App is a vibrant platform to display beautifully styled code snippets with customizable themes, padding, and language options. Perfect for developers and designers to showcase their code elegantly.",
   },
   {
     _id: "d4e5f6g7h8i9j0k1l2m3",
-    name: "Urban Vertical Gardens",
-    img: "https://picsum.photos/id/4/150",
-    website: "https://verticalgardens.example.com",
+    name: "QR Code Generator",
+    img: "/img/projects/QRCodeGenerator.png",
+    website: "https://qr-code-generator-lac.vercel.app/",
     description:
-      "Transforming urban spaces with vertical gardens that improve air quality and promote biodiversity.",
-    images: [
-      "https://picsum.photos/id/4/300",
-      "https://picsum.photos/id/14/300",
-      "https://picsum.photos/id/24/300",
-    ],
+      "This is a clean, user-friendly application designed to generate customizable QR codes. Users can create QR codes for links or emails, modify the QR code's color and background, and download it in PNG or SVG format. The interface is responsive and visually appealing, making it easy for anyone to use.",
   },
   {
     _id: "e5f6g7h8i9j0k1l2m3n4",
-    name: "Recycling Innovations",
-    img: "https://picsum.photos/id/5/150",
-    website: "https://recyclinginnovations.example.com",
+    name: "Dubai Movers Packers",
+    img: "/img/projects/dubaiMoversPackers.png",
+    website: "https://dubai-movers-packers.vercel.app/",
     description:
-      "Developing cutting-edge recycling technologies to reduce waste and promote a circular economy.",
-    images: [
-      "https://picsum.photos/id/5/300",
-      "https://picsum.photos/id/15/300",
-      "https://picsum.photos/id/25/300",
-    ],
+      "Make your move easy with Dubai Movers Packers. Our professional team offers reliable packing and moving services, including 24/7 house shifting. Get a quick quote and enjoy transparent pricing. Visit Dubai Movers Packers to start your stress-free move today.",
   },
   {
     _id: "f6g7h8i9j0k1l2m3n4o5",
-    name: "Green Transport Solutions",
-    img: "https://picsum.photos/id/6/150",
-    website: "https://greentransport.example.com",
-    description:
-      "Providing eco-friendly transportation options to reduce emissions and promote sustainable mobility.",
-    images: [
-      "https://picsum.photos/id/6/300",
-      "https://picsum.photos/id/16/300",
-      "https://picsum.photos/id/26/300",
-    ],
+    name: "Panaverse DAO",
+    img: "/img/projects/panaverse.png",
+    website: "https://panaverse-dao.vercel.app/",
+    description: "",
   },
   {
     _id: "g7h8i9j0k1l2m3n4o5p6",
-    name: "Sustainable Fashion Line",
-    img: "https://picsum.photos/id/7/150",
-    website: "https://sustainablefashion.example.com",
+    name: "Focus",
+    img: "/img/projects/focus.png",
+    website: "https://focus-zeta-seven.vercel.app/",
     description:
-      "Designing and producing fashionable clothing with sustainable materials and ethical practices.",
-    images: [
-      "https://picsum.photos/id/7/300",
-      "https://picsum.photos/id/17/300",
-      "https://picsum.photos/id/27/300",
-    ],
+      "A visually stunning landing page built with Tailwind CSS and animated using Framer Motion. The page is designed to captivate users with sleek UI/UX, smooth animations, and optimized responsiveness for all devices. 💡 Key Highlights: 🎥 Integrated engaging video content to enhance the storytelling experience. ✨ Seamless animations that bring the interface to life. 📱 Fully responsive design for both mobile and desktop users. Creating this project has been a fantastic experience, blending creativity and technical skills to deliver a modern and dynamic landing page. I'd love to hear your thoughts.",
   },
   {
     _id: "h8i9j0k1l2m3n4o5p6q7",
-    name: "Energy Efficient Buildings",
-    img: "https://picsum.photos/id/8/150",
-    website: "https://energybuildings.example.com",
+    name: "Weather App",
+    img: "/img/projects/weatherapp.png",
+    website: "https://weather-app-livid-tau.vercel.app/",
     description:
-      "Creating energy-efficient buildings that reduce energy consumption and lower operational costs.",
-    images: [
-      "https://picsum.photos/id/8/300",
-      "https://picsum.photos/id/18/300",
-      "https://picsum.photos/id/28/300",
-    ],
+      "A React.js weather application that provides real-time weather updates with a modern UI, dynamic backgrounds, and a search feature to check forecasts for any city. Deployed on Vercel for fast and reliable performance.",
   },
   {
     _id: "i9j0k1l2m3n4o5p6q7r8",
-    name: "Water Conservation Tech",
-    img: "https://picsum.photos/id/9/150",
-    website: "https://waterconservation.example.com",
+    name: "React Todo Application",
+    img: "/img/projects/todo.png",
+    website: "https://todo-app-red-delta.vercel.app/",
     description:
-      "Implementing advanced technologies to conserve water and ensure sustainable water management.",
-    images: [
-      "https://picsum.photos/id/9/300",
-      "https://picsum.photos/id/19/300",
-      "https://picsum.photos/id/29/300",
-    ],
-  },
-  {
-    _id: "j0k1l2m3n4o5p6q7r8s9",
-    name: "Organic Farming Techniques",
-    img: "https://picsum.photos/id/10/150",
-    website: "https://organicfarming.example.com",
-    description:
-      "Promoting organic farming practices to produce healthy food while preserving the environment.",
-    images: [
-      "https://picsum.photos/id/10/300",
-      "https://picsum.photos/id/20/300",
-      "https://picsum.photos/id/30/300",
-    ],
+      "A simple and stylish Todo App built with React.js, featuring task creation, editing, completion, and deletion. The app has a clean UI with interactive icons and smooth functionality. Deployed on Vercel for seamless access. ✅🚀",
   },
 ];
 
