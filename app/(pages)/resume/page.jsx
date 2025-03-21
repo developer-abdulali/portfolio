@@ -13,18 +13,17 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { motion } from "framer-motion";
+import Image from "next/image";
+import { useEffect } from "react";
 
 const ResumePage = () => {
+  useEffect(() => {
+    document.title = "Abdul Ali - My Resume";
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
-      }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
-    >
+    <section className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0">
       <div className="container mx-auto">
         <Tabs
           defaultValue="experience"
@@ -120,8 +119,17 @@ const ResumePage = () => {
                       <TooltipProvider delayDuration={100}>
                         <Tooltip>
                           <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex items-center justify-center group">
-                            <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                              {skill.icon}
+                            {/* <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                              {skill.image}
+                            </div> */}
+                            <div className="w-[130px] h-[130px]">
+                              <Image
+                                src={skill.image}
+                                alt={skill.name}
+                                width={200}
+                                height={200}
+                                className=""
+                              />
                             </div>
                           </TooltipTrigger>
                           <TooltipContent>
@@ -162,7 +170,7 @@ const ResumePage = () => {
           </div>
         </Tabs>
       </div>
-    </motion.div>
+    </section>
   );
 };
 

@@ -10,15 +10,25 @@ import {
 } from "react-icons/fa";
 import { MdOutlineMobileFriendly } from "react-icons/md";
 
+// Import the necessary icons
 import {
   FaHtml5,
   FaCss3,
   FaJs,
   FaReact,
-  FaFigma,
   FaNodeJs,
+  FaFigma,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiExpress,
+  SiMongodb,
+  SiFirebase,
+} from "react-icons/si";
+import { DiBootstrap } from "react-icons/di";
+import { TbBrandFramerMotion } from "react-icons/tb";
+import { GiMaterialsScience } from "react-icons/gi";
 
 export const linksData = [
   { name: "home", path: "/" },
@@ -96,8 +106,7 @@ export const projectsData = [
     img: "/assets/projects/focus.png",
     live: "https://focus-zeta-seven.vercel.app/",
     github: "#",
-    description:
-      "A visually stunning landing page built with Tailwind CSS and animated using Framer Motion. The page is designed to captivate users with sleek UI/UX, smooth animations, and optimized responsiveness for all devices. 💡 Key Highlights: 🎥 Integrated engaging video content to enhance the storytelling experience. ✨ Seamless animations that bring the interface to life. 📱 Fully responsive design for both mobile and desktop users. Creating this project has been a fantastic experience, blending creativity and technical skills to deliver a modern and dynamic landing page. I'd love to hear your thoughts.",
+    description: "A visually stunning landing page built with",
     stack: [{ name: "html" }, { name: "css" }, { name: "javascript" }],
   },
   {
@@ -305,32 +314,29 @@ export const experienceData = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, nam!",
+    "With a strong background in web development, I specialize in front-end technologies, particularly React.js. I have experience building dynamic web applications and collaborating with cross-functional teams to deliver high-quality solutions.",
+
+  // "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, nam!",
   items: [
     {
-      company: "XYZ Tech",
+      company: "Dot Escapists",
       position: "React Developer",
-      duration: "2022 - Present",
+      duration: "Aug 2024 - Present",
     },
     {
-      company: "XYZ Tech",
-      position: "React Developer",
-      duration: "2022 - Present",
+      company: "New Alpha General Transport",
+      position: "Frontend React Developer",
+      duration: "Jan 2024 - Jul 2024",
     },
     {
-      company: "XYZ Tech",
+      company: "IG Tech Services",
       position: "React Developer",
-      duration: "2022 - Present",
+      duration: "Jan 2024 - Jan 2024",
     },
     {
-      company: "XYZ Tech",
-      position: "React Developer",
-      duration: "2022 - Present",
-    },
-    {
-      company: "XYZ Tech",
-      position: "React Developer",
-      duration: "2022 - Present",
+      company: "CodeSoft",
+      position: "Web Developer (Intern)",
+      duration: "Aug 2023 - Oct 2023",
     },
   ],
 };
@@ -343,36 +349,76 @@ export const educationData = {
     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, nam!",
   items: [
     {
-      institution: "institution name",
-      degree: "degree",
-      duration: "2022",
+      institution: "Shah Abdul Latif University, Khairpur",
+      degree: "Bachelor in Computer Science",
+      duration: "2019 - 2023",
     },
     {
-      institution: "institution name",
-      degree: "degree",
-      duration: "2022",
+      institution: "Sindh Commercial Centre, Shikarpur",
+      degree: "Diploma in Information Technology (D.I.T)",
+      duration: "2022 - 2023",
     },
     {
-      institution: "institution name",
-      degree: "degree",
-      duration: "2022",
+      institution: "C&S Govt Degree College Shikarpur",
+      degree: "F.S.C",
+      duration: "2018",
     },
   ],
 };
 
 // skills data
 export const mySkills = {
-  title: "My skills",
+  title: "My Skills",
   description:
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, nam!",
+    "I specialize in front-end development with a strong foundation in HTML, CSS, and JavaScript. My expertise extends to modern frameworks like React.js and Next.js, allowing me to build dynamic and responsive web applications. Additionally, I have experience with Tailwind CSS for efficient styling, Node.js for server-side development, and Figma for design prototyping.",
   skillList: [
-    { icon: <FaHtml5 />, name: "HTML 5" },
-    { icon: <FaCss3 />, name: "CSS 3" },
-    { icon: <FaJs />, name: "JavaScript" },
-    { icon: <FaReact />, name: "React.js" },
-    { icon: <SiNextdotjs />, name: "Next.js" },
-    { icon: <SiTailwindcss />, name: "Tailwind CSS" },
-    { icon: <FaNodeJs />, name: "Node.js" },
-    { icon: <FaFigma />, name: "Figma" },
+    { name: "HTML", image: "/assets/skills/html.webp" },
+    { name: "CSS", image: "/assets/skills/css.png" },
+    { name: "Bootstrap", image: "/assets/skills/bootstrap.png" },
+    { name: "JavaScript", image: "/assets/skills/js.png" },
+    { name: "TypeScript", image: "/assets/skills/ts.png" },
+    { name: "Tailwind CSS", image: "/assets/skills/tailwindcss.png" },
+    { name: "React", image: "/assets/skills/react.png" },
+    { name: "Next.js", image: "/assets/skills/next.png" },
+    { name: "ShadCN UI", image: "/assets/skills/shadcd.png" },
+    { name: "AOS", image: "/assets/skills/aos.png" },
+    { name: "Cloudinary", image: "/assets/skills/cloudinary.png" },
+    { name: "ExpressJS", image: "/assets/skills/expressjs.png" },
+    { name: "Firebase", image: "/assets/skills/firebse.png" },
+    { name: "Framer Motion", image: "/assets/skills/framermotion.svg" },
+    { name: "JWT", image: "/assets/skills/jwt.png" },
+    { name: "MongoDB", image: "/assets/skills/mongodb.svg" },
+    { name: "Material UI", image: "/assets/skills/mui.png" },
+    { name: "Node.js", image: "/assets/skills/node.png" },
+    { name: "React Bootstrap", image: "/assets/skills/reactbootstrap.png" },
+    { name: "React Icons", image: "/assets/skills/reacticons.png" },
   ],
 };
+
+// export const mySkills = {
+//   title: "My skills",
+//   description:
+//     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, nam!",
+//   skillList: [
+//     { name: "HTML", icon: "/assets/skills/html.webp" },
+//     { name: "CSS", icon: "/assets/skills/css.png" },
+//     { name: "Bootstrap", icon: "/assets/skills/bootstrap.png" },
+//     { name: "JavaScript", icon: "/assets/skills/js.png" },
+//     { name: "TypeScript", icon: "/assets/skills/ts.png" },
+//     { name: "Tailwind CSS", icon: "/assets/skills/tailwindcss.png" },
+//     { name: "React", icon: "/assets/skills/react.png" },
+//     { name: "Next.js", icon: "/assets/skills/next.png" },
+//     { name: "ShadCN UI", icon: "/assets/skills/shadcd.png" },
+//     { name: "AOS", icon: "/assets/skills/aos.png" },
+//     { name: "Cloudinary", icon: "/assets/skills/cloudinary.png" },
+//     { name: "ExpressJS", icon: "/assets/skills/expressjs.png" },
+//     { name: "Firebase", icon: "/assets/skills/firebse.png" },
+//     { name: "Framer Motion", icon: "/assets/skills/framermotion.svg" },
+//     { name: "JWT", icon: "/assets/skills/jwt.png" },
+//     { name: "MongoDB", icon: "/assets/skills/mongodb.svg" },
+//     { name: "Material UI", icon: "/assets/skills/mui.png" },
+//     { name: "Node.js", icon: "/assets/skills/node.png" },
+//     { name: "React Bootstrap", icon: "/assets/skills/reactbootstrap.png" },
+//     { name: "React Icons", icon: "/assets/skills/reacticons.png" },
+//   ],
+// };
