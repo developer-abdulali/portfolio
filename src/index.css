@@ -1,0 +1,151 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700;800&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --first-color: hsl(271, 76%, 53%);
+  --title-color: hsl(271, 4%, 26%);
+  --text-color: hsl(271, 4%, 38%);
+  --body-color: hsl(271, 4%, 99%);
+  --container-color: hsl(271, 4%, 91%);
+  --white-color: hsl(271, 4%, 100%);
+
+  /*========== Font family ==========*/
+  --body-font: "Montserrat Alternates";
+
+  /*========== Font sizes ==========*/
+  --h1-font-size: 3.5rem;
+  --h2-font-size: 3rem;
+  --h3-font-size: 1.5rem;
+  --large-font-size: 1.25rem;
+  --normal-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+
+  /*========== Font weight ==========*/
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+  --weight-800: 800;
+}
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--weight-500);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--weight-800);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.button {
+  display: inline-block;
+  color: var(--title-color);
+  border: 1px solid var(--first-color);
+  padding: 1.25rem 4.5rem 1.25rem 2rem;
+  font-size: var(--smaller-font-size);
+  font-weight: var(--weight-600);
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.button:hover {
+  color: var(--white-color);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--first-color);
+  border-radius: inherit;
+  z-index: -10;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.button:hover::before {
+  transform: translateX(0);
+}
+
+.button-icon {
+  position: absolute;
+  inset: -1px -1px -1px auto;
+  background-color: var(--first-color);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  color: var(--white-color);
+  font-size: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+
+/*=============== LAYOUT ===============*/
+.grid {
+  display: grid;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+/* For medium devices */
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 540px) {
+}
+
+@media screen and (max-width: 420px) {
+}
